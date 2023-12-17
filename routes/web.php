@@ -34,5 +34,5 @@ Route::prefix('/app')->group(function(){
     Route::get('/produtos', function () {return 'produtos';})->name('app.produtos');
 });
 Route::get('/teste/{p1}/{p2}', [TesteController::class,'teste'])->name('site.teste');
-Route::fallback(function(){echo 'fall';});
+Route::fallback(function(){echo 'tem algo de errado ai irmao';});
  
